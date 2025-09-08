@@ -1,0 +1,104 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+ 
+}
+button{
+    color:white;
+    border-radius: 22px;
+    border: 2px solid black;
+    background-color: black;
+    width: 120px;
+    text-align: center;
+    font-size: 18px;
+    padding:  0 5px 0 8px;
+    margin: 20px;
+    height: 40px;
+}
+body{
+    background-color:#F7B05B;
+}
+
+.new-paragraph{
+  text-align: center;
+  font-weight: lighter;  
+font-family: cursive;
+font-size: 10px;
+line-height: normal;
+text-transform: capitalize;
+}
+.new-heading-1{
+  text-align: center;
+  text-transform: uppercase;
+}
+.all-class{
+  text-align: center;
+}
+.all-class2{
+  text-align: right;
+  font-weight: bold;
+}
+.all-class3{
+  text-align: left;
+  font-weight: bolder;
+}
+.all-class4{
+  text-align: start;
+  font-weight: lighter;
+}
+.all-class5{
+  text-align: end;
+  font-weight: normal;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+.para-div{
+  height:250px;
+  width: auto;
+}
+.img-class{
+  border-radius: 12px;
+    margin:10px;
+}
+
+.new-div{
+  width:80em;
+  font-size:23px;
+}
+.heading-class{
+  width:auto;
+  font-size: 2em;
+}
+.practice{
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  text-align: center;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  border: 2px solid black;
+}
+.practice:hover{
+  background-color: blue;
+  color:pink;
+  font-size: 20px;
+  transition: all 2s ease-in-out 2s;
+  transform: rotate(65deg);
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:590px){
+  .new-paragraph{  
+font-size: 7px;
+}
+.new-heading-1{
+  font-size: 20px;
+} 
+}
+.greyBall:hover { transform: scale(2); transition: 500ms transform; }
