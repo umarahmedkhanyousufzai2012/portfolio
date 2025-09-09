@@ -1951,7 +1951,9 @@ body::before {
 @media (max-width:600px){
   .nav-opts{
     margin-left: 10px;
-    font-size: 10px;
+  }
+  .opts{
+      font-size: 10px;
   }
   .order-btn{
     font-size: 7px;
