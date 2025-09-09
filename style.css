@@ -1853,10 +1853,12 @@
   justify-content: space-between;
   width: 600px;
   margin-left: 350px;
+  
 }
 .opts{
    cursor: pointer;
     color:rgb(95, 99, 104);
+    font-size: 15px;
 }
 .opts:hover{
   text-decoration: underline;
@@ -1882,18 +1884,7 @@
   font-size: 30px;
   width: 800px;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.4), transparent 50%),
-              radial-gradient(circle at bottom right, rgba(255, 105, 180, 0.4), transparent 50%);
-  filter: blur(120px); /* creates soft glow */
-  z-index: -1; /* keep behind text */
-}
+
 .order-btn2{
     color:white;
     border-radius: 8px;
@@ -1912,7 +1903,7 @@
    background-color: rgb(136, 177, 230);
 }
 .hero{
-  position: relatives;
+  position: relative;
     display: flex;
     flex-direction: column;
   justify-content: center;
@@ -1921,6 +1912,7 @@
   padding: 0 20px;
   height: 400px;
   overflow: hidden;
+  margin-top: 50px;
 }
 .hero-p{
   max-width: 650px;
@@ -1933,86 +1925,42 @@ body{
     background-color:white;
      overflow-x: hidden; 
 }
-
-.new-paragraph{
-  text-align: center;
-  font-weight: lighter;  
-font-family: cursive;
-font-size: 10px;
-line-height: normal;
-text-transform: capitalize;
-}
-.new-heading-1{
-  text-align: center;
-  text-transform: uppercase;
-}
-.all-class{
-  text-align: center;
-}
-.all-class2{
-  text-align: right;
-  font-weight: bold;
-}
-.all-class3{
-  text-align: left;
-  font-weight: bolder;
-}
-.all-class4{
-  text-align: start;
-  font-weight: lighter;
-}
-.all-class5{
-  text-align: end;
-  font-weight: normal;
-}
-button a{
-  text-decoration: none;
-  color: white;
-}
-.para-div{
-  height:250px;
-  width: auto;
-}
-.img-class{
-  border-radius: 12px;
-    margin:10px;
+/* Background effect for the whole page */
+body {
+  background: white;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.new-div{
-  width:80em;
-  font-size:23px;
+/* Add blurred gradient layer */
+body::before {
+  content: "";
+  position: fixed; /* cover viewport fully */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.4), transparent 50%),
+              radial-gradient(circle at bottom right, rgba(255, 105, 180, 0.4), transparent 50%);
+  filter: blur(120px);
+  z-index: -1; /* stay behind all content */
 }
-.heading-class{
-  width:auto;
-  font-size: 2em;
-}
-.practice{
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  text-align: center;
-  display: flex;
-  align-items:center ;
-  justify-content: center;
-  border: 2px solid black;
-}
-.practice:hover{
-  background-color: blue;
-  color:pink;
-  font-size: 20px;
-  transition: all 2s ease-in-out 2s;
-  transform: rotate(65deg);
-}
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media(max-width:590px){
-  .new-paragraph{  
-font-size: 7px;
-}
-.new-heading-1{
-  font-size: 20px;
-} 
+
+
+@media (max-width:600px){
+  .nav-opts{
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .order-btn{
+    font-size: 7px;
+    margin: 5px;
+    padding:0 5px 0 5px ;
+    height: 25px;
+  }
+  .hero-h1{
+    font-size: 20px;
+    width: 350px;
+  }
 }
